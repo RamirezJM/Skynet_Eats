@@ -48,8 +48,9 @@
         <p class="info-text">Is it a bird? Is it a plane? None of the above. It’s a drone on its way to you with your tasty groceries! If
           you don’t want fast food, but you want your food fast, <a href="#">check out our partnered shops here</a>.</p>
       </div>
-      <ul class="statistics">
+      <div class="statistics">
         <img class="info-image" src="assets/images/pal9000.jpg" alt="A flying Skynet drone." />
+        <ul>
         <li class="stat">
           <h3 class="stat-heading">Drones🤖</h3>
           <p class="stat-number">+4000</p>
@@ -63,6 +64,7 @@
           <p class="stat-number">~70</p>
         </li>
       </ul>
+      </div>
     </section>
 
     <!-- About section -->
@@ -72,10 +74,8 @@
         <p class="about-text">Skynet was founded by Ariana Grande, a true pioneer in the field of AI and robotics.🦾 Our
           purpose is to serve humans and we realized that we’re driving humans around, we’re walking their bio-pets, why
           not feed them too?</p>
-        <p>If you want to know more, head over to our about page!</p>
-        <div class="about-link">
-          <a href="#">About Skynet</a>
-        </div>
+        <p class="about-text">If you want to know more, head over to our about page!</p>
+        <button class="about-link"><a href="#">About Skynet</a></button>
       </div>
     </section>
 
@@ -89,7 +89,7 @@
         <input class="input" id="name" type="text" placeholder="Ariana Regular" />
         <label for="email">Email</label>
         <input class="input" id="email" type="email" placeholder="ariana.regular@gmail.com" />
-        <button class="submit-button" type="button" onclick="submitForm()">Notify me</button>
+        <button class="submit-button" type="button" id="submit-btn">Notify me</button>
       </form>
     </section>
 
@@ -121,7 +121,7 @@
     </ul>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <!-- <script src="assets/js/script.js"></script> -->
 
 </body>
 

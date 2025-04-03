@@ -1,7 +1,10 @@
 // Clearing out the input fields on clicking the submit button
-document.querySelector(".submit-button").onclick = function() {submitForm()};
 
-const submitForm = () => {
+document.addEventListener('DOMContentLoaded', () => {
+const submitBtn = document.getElementById('submit-btn')
+submitBtn.addEventListener('click', submitForm)
+
+function submitForm(){
     document.getElementById("name").value = ""
     document.getElementById("email").value = ""
 }
@@ -34,3 +37,5 @@ document.getElementById('postcode').addEventListener('input', checkInputs);
 document.getElementById('email').addEventListener('input', checkInputs);
 document.getElementById('yes').addEventListener('change', checkInputs);
 document.getElementById('no').addEventListener('change', checkInputs);
+
+})
